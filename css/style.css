@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'ibm';
-    src: url(ibm.woff);
+    src: url(ibmplexsans-medium.woff);
+    src: url(IBMPlexSans-Medium.ttf);
 }
 
 * {
