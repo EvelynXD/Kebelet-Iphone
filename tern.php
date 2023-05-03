@@ -24,7 +24,7 @@ if ($model == 'iPhone 11') {
   $url = '';
 }
 
-$image = imagecreatefrompng('assets/template/ipon-aseli.png');
+$image = imagecreatefrompng('assets/ipon-aseli.png');
 // mengatur gambar lebar dan tinggi
 $width = 1792;
 $height = 828;
@@ -60,14 +60,14 @@ imagettftext($img, $font_size, 0, $namaX, $namaY, $font_color, $font_file, $nama
 imagettftext($img, $font_size0, 0, $waktuX, $waktuY, $font_color0, $font_file0, $waktu);
 
 // Definisikan nama file screenshot yang akan dibuat
-//$filename = $nama . '.png'; //---
+$filename = $nama . '.png'; //---
 
 // Simpan gambar
-//imagepng($img, $filename);  //---
+imagepng($img, $filename);  //---
 
 // Output the image to the browser
 header("Content-type: image/png");
-//header('Content-Disposition: attachment; filename="' . $filename . '"');  //---
+header('Content-Disposition: attachment; filename="' . $filename . '"');  //---
 imagepng($image);
 
 // Free up memory
