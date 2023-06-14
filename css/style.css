@@ -191,6 +191,10 @@ form {
 .side5 span {
     font-weight: lighter;
 }
+.side5 a{
+    text-decoration:none;
+    color: #a80051;
+}
 
 @media(max-width: 442px) {
     .imgBox img {
