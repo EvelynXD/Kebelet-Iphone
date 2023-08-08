@@ -362,6 +362,8 @@ ul li {
     color: white;
     position: relative;
     overflow-y: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 #mac-terminal .shell .command-line {
     font-family: monospace, sans-serif;
